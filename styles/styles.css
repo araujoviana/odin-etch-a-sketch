@@ -2,13 +2,28 @@
 
 body {
     font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .square-grid {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    border: 3px solid;
+    width: fit-content;
+}
+
+.square-column {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .singular-square {
-    border: 3px solid red;
+    height: 20px;
+    width: 20px;
 }
+
