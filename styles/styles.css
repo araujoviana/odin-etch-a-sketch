@@ -3,3 +3,12 @@
 body {
     font-family: "Ubuntu", sans-serif;
 }
+
+.square-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.singular-square {
+    border: 3px solid red;
+}
