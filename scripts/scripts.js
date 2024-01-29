@@ -6,6 +6,13 @@ const resolutionButton = document.querySelector("#change-res");
 const DEFAULT_GRID_SIZE = 16;
 const DEFAULT_GRID_RESOLUTION = 400;
 
+function getRandomColor() {
+    let r = Math.floor(Math.random() * 256); 
+    let g = Math.floor(Math.random() * 256); 
+    let b = Math.floor(Math.random() * 256); 
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 function defineGridResolution(resolution = DEFAULT_GRID_SIZE, resetGrid = false) {
 
     if (resetGrid) {
@@ -28,7 +35,7 @@ function defineGridResolution(resolution = DEFAULT_GRID_SIZE, resetGrid = false)
             div.style.height = squareSize + "px";
 
             div.addEventListener('mouseover', () => {
-                div.style.backgroundColor = 'black';
+                div.style.backgroundColor = getRandomColor();
             })
 
 
