@@ -6,24 +6,24 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
 }
 
 .square-grid {
     display: flex;
-    justify-content: center;
     border: 3px solid;
-    width: fit-content;
+    flex-wrap: wrap;
 }
 
 .square-column {
     display: flex;
     flex-direction: column;
-    
 }
 
-.singular-square {
-    height: 20px;
-    width: 20px;
-}
 
+button {
+    margin: 21px;
+    margin-top: 0;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 13px;
+}
